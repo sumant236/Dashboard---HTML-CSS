@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard Project</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/32650486ba.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main>
+      <!-- left side -->
+      <section class="left">
+        <!-- Profle -->
+        <div class="profile">
+          <img
+            src="./multimedia/man.jpg"
+            alt="profile pic"
+            class="profile-pic"
+          />
+          <h1>John Doe</h1>
+        </div>
+        <!-- nav links -->
+        <div class="navigation">
+          <div class="nav">
+            <i class="fa-solid fa-list-ul"></i>
+            <a href="#dashboard">Dashboard</a>
+          </div>
+          <div class="nav">
+            <i class="fa-solid fa-tags"></i>
+            <a href="#data">Data</a>
+          </div>
+          <div class="nav">
+            <i class="fa-solid fa-user"></i>
+            <a href="#users">Users</a>
+          </div>
+          <div class="nav">
+            <i class="fa-solid fa-calendar-days"></i>
+            <a href="#schedule">Schedule</a>
+          </div>
+          <div class="nav">
+            <i class="fa-solid fa-gear"></i>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+      </section>
+      <!-- Right Side -->
+      <section class="right">
+        <header>
+          <h1>DashBoard</h1>
+          <input type="text" placeholder="search..." />
+        </header>
+        <!-- Dashboard -->
+        <article id="dashboard">
+          <div>
+            <h3>Activities</h3>
+            <p>May-June 2023</p>
+            <div>
+              <img src="./multimedia/BarGraph.png" alt="graph_image" />
+            </div>
+          </div>
+        </article>
+        <!-- Dashboard Data -->
+        <article id="data">
+          <h2 class="title">Dashboard Data</h2>
+          <div class="card-container">
+            <div class="card1 card">
+              <i class="fa-solid fa-dollar-sign"></i>
+              <p class="card-title">Total Revenue</p>
+              <p class="card-data">$456,553,563</p>
+            </div>
+            <div class="card2 card">
+              <i class="fa-solid fa-tag"></i>
+              <p class="card-title">Total Transaction</p>
+              <p class="card-data">1,450</p>
+            </div>
+            <div class="card3 card">
+              <i class="fa-solid fa-thumbs-up"></i>
+              <p class="card-title">Total Likes</p>
+              <p class="card-data">1,234</p>
+            </div>
+            <div class="card4 card">
+              <i class="fa-solid fa-user"></i>
+              <p class="card-title">Total User</p>
+              <p class="card-data">856</p>
+            </div>
+          </div>
+        </article>
+        <!-- Users Interactions -->
+        <article id="users">
+          <h2 class="title">User Interactions</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Month</th>
+                <th>Number of Users</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>January</td>
+                <td>1000</td>
+              </tr>
+              <tr>
+                <td>February</td>
+                <td>1200</td>
+              </tr>
+              <tr>
+                <td>March</td>
+                <td>1500</td>
+              </tr>
+              <tr>
+                <td>April</td>
+                <td>1250</td>
+              </tr>
+              <tr>
+                <td>May</td>
+                <td>1600</td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+        <!-- Scheduled Meetings -->
+        <article id="schedule">
+          <div class="schedule-header">
+            <h3>Today's Schedule</h3>
+            <p>See All</p>
+          </div>
+          <div class="schedule-details">
+            <div>
+              <p class="meets head">Meeting from suppliers from Kutta Bali</p>
+              <p class="meets data">14.00-15.00</p>
+              <p class="meets data">at sunset road kutta bali</p>
+            </div>
+            <div>
+              <p class="meets head">Meeting from suppliers from Suresh</p>
+              <p class="meets data">15.00-16.00</p>
+              <p class="meets data">at sunset road bali</p>
+            </div>
+            <div>
+              <p class="meets head">Meeting from suppliers from Ajay</p>
+              <p class="meets data">12.00-01.00</p>
+              <p class="meets data">at sunset road</p>
+            </div>
+            <div>
+              <p class="meets head">Meeting from suppliers from Encoprice</p>
+              <p class="meets data">2.00-3.00</p>
+              <p class="meets data">at sohana road</p>
+            </div>
+            <div>
+              <p class="meets head">Meeting from suppliers from JK Ltd.</p>
+              <p class="meets data">4.00-5.00</p>
+              <p class="meets data">at morning tent house</p>
+            </div>
+            <div>
+              <p class="meets head">Meeting from suppliers from Manager</p>
+              <p class="meets data">6.00-8.00</p>
+              <p class="meets data">at imperfectio bar sohna road</p>
+            </div>
+          </div>
+        </article>
+        <!-- Contact Details -->
+        <article id="contact">
+          <h2 class="title">Contact Details</h2>
+          <div class="contact-container">
+            <!-- Location Map -->
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224346.54004883842!2d77.04417347155065!3d28.52725273882469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1726083171839!5m2!1sen!2sin"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <div class="feedback">
+              <h2>Feedback</h2>
+              <form action="#" method="post">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your Name"
+                  required
+                  class="feedback-input"
+                />
+                <br />
+                <input
+                  type="email"
+                  class="feedback-input"
+                  name="email"
+                  placeholder="Your Email"
+                  required
+                />
+                <br />
+                <textarea
+                  class="feedback-input"
+                  name="message"
+                  placeholder="Your Feedback"
+                  required
+                ></textarea>
+                <br />
+                <input type="submit" value="Submit Feedback" />
+              </form>
+            </div>
+          </div>
+        </article>
+        <!-- Footer -->
+        <footer>
+          <div>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+          <div>&copy; 2024 Your Company Name. All Right Reserved.</div>
+        </footer>
+      </section>
+    </main>
+  </body>
+</html>

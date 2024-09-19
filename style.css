@@ -1,0 +1,398 @@
+body {
+  font-family: "Playfair", serif;
+  background: #f4f4f4;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+
+/* Left Side CSS */
+
+.left {
+  background-color: #000;
+  color: #fff;
+  position: sticky;
+  height: 80vh;
+  padding: 30px;
+  border-radius: 30px;
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+  top: 35px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-pic {
+  width: 80%;
+  border-radius: 50%;
+}
+
+/* Nav links CSS */
+.navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav > a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.nav > a:hover {
+  color: lightgray;
+}
+
+.nav > i:hover {
+  color: yellow;
+}
+
+/* Right Side CSS */
+
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* Header CSS */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header > h1 {
+  margin: 10px 0px 0px 50px;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+header > input {
+  margin-right: 10%;
+  width: 200px;
+  height: 25px;
+  border-radius: 20px;
+  border: none;
+}
+
+header > input:focus {
+  outline: none;
+  border: 3px lightgreen solid;
+}
+
+header > input::placeholder {
+  font-size: 0.8rem;
+  color: rgb(176, 174, 174);
+  font-weight: 500;
+}
+
+/* Dashboard CSS */
+#dashboard {
+  width: 80%;
+  padding: 10px;
+  margin: auto;
+  border-radius: 25px;
+  background-color: #fff;
+}
+
+#dashboard img {
+  width: 100%;
+  object-fit: cover;
+}
+
+#data {
+  width: 90%;
+  margin: auto;
+}
+
+/* All the titles */
+.title {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.title:hover {
+  text-decoration-color: goldenrod;
+  font-size: 2.5rem;
+  transition: 1s;
+}
+
+/* Cards CSS */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  font-family: "satisfy", cursive;
+  font-weight: 700;
+}
+
+.card {
+  width: 180px;
+  height: 100px;
+  border-radius: 20px;
+}
+
+.card:hover {
+  background: radial-gradient(
+    circle,
+    rgb(225, 176, 207) 0%,
+    rgb(162, 184, 229) 100%
+  );
+}
+
+.card1 {
+  background: #ddefdf;
+}
+
+.card2 {
+  background: #f3ecde;
+}
+
+.card3 {
+  background: #efdada;
+}
+
+.card4 {
+  background: #dfe0ef;
+}
+
+.card > i {
+  margin: 20px 0px 0px 150px;
+}
+
+.card-title {
+  margin: 0px 0px 0px 10px;
+  font-size: 1.2rem;
+}
+
+.card-data {
+  margin: 4px 0px 0px 10px;
+  font-size: 1rem;
+}
+
+/* User Interaction CSS */
+
+table {
+  width: 80%;
+  border-collapse: collapse;
+  border-radius: 20px;
+  background-color: #fff;
+  margin: auto;
+}
+
+table th,
+table td {
+  padding: 15px 100px;
+  text-align: left;
+}
+
+table th {
+  background-color: #a39696;
+  font-size: 1.2rem;
+}
+
+table > tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+table > tbody tr:hover {
+  background-color: #eaeaea;
+}
+
+/* Scheduled Meetings CSS */
+
+#schedule {
+  background-color: #fff;
+  border-radius: 20px;
+  height: 450px;
+  overflow-y: scroll;
+  max-height: 400px;
+  width: 85%;
+  margin: auto;
+}
+
+.schedule-header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.schedule-header > h3 {
+  margin-left: 20px;
+  font-weight: 600;
+  font-size: 1.7rem;
+  margin-top: 0;
+  padding: 0;
+}
+
+.schedule-header > p {
+  margin: 0;
+  margin-right: 20px;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.schedule-header > p:hover {
+  color: #b3e398;
+}
+
+.meets {
+  margin: 0px 0px 1px 10px;
+}
+
+.head {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.data {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #999999;
+}
+
+.schedule-details div:nth-child(odd) {
+  margin-left: 20px;
+  margin-bottom: 10px;
+  border-left: 3px solid #b3e398;
+}
+
+.schedule-details div:nth-child(even) {
+  margin-left: 20px;
+  margin-bottom: 10px;
+  border-left: 3px solid #8b93c1;
+}
+
+/* Contact Details CSS */
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin: 20px 0px 20px 20px;
+}
+/* loaction map CSS */
+iframe {
+  border-radius: 30px;
+  width: 100%;
+}
+
+.feedback {
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 20px;
+}
+
+.feedback > h2 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.feedback-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.feedback textarea {
+  resize: vertical;
+  height: 150px;
+}
+
+.feedback input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #b3e398;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* Footer CSS */
+
+footer {
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  padding: 20px 0px;
+  text-align: center;
+}
+
+footer > div {
+  margin-bottom: 10px;
+}
+
+footer > div > a {
+  color: #fff;
+  font-size: 24px;
+  margin: 0px 10px;
+}
+
+footer a:hover {
+  color: lightgray;
+}
+
+footer a:first-child {
+  margin-left: 0;
+}
+
+footer a:last-child {
+  margin-right: 0;
+}
+
+@media screen and (width<=780px) {
+  main {
+    display: block;
+  }
+
+  .left {
+    position: static;
+    height: auto;
+  }
+
+  .profile-pic {
+    width: 15%;
+    position: absolute;
+    top: 0.1rem;
+  }
+
+  .profile h1 {
+    margin-top: 4rem;
+  }
+
+  .navigation {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .navigation i {
+    display: none;
+  }
+
+  .card-container {
+    justify-content: space-around;
+  }
+}
